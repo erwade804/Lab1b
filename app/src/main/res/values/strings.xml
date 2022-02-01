@@ -9,4 +9,25 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string-array name="strings">
+        <item>you get knocked out</item>
+        <item>you go somewhere else</item>
+        <item>you find a dead man</item>
+        <item>you meet a buxom blonde</item>
+        <item>someone has searched the place</item>
+        <item>a crooked cop warns you</item>
+        <item>you are arrested</item>
+        <item>you find a frayed rope</item>
+        <item>a bullet whizzes past your ear!</item>
+        <item>you are almost run over!</item>
+        <item>you are being followed</item>
+        <item>you smell familiar perfume</item>
+        <item>the telephone rings</item>
+        <item>there is a knock at the door</item>
+        <item>you hear footsteps behind you ...</item>
+        <item>you hear a scream!</item>
+        <item>you sense you are not alone ...</item>
+        <item>... forget this story, it stinks!</item>
+    </string-array>
 </resources>

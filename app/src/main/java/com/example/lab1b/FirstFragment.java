@@ -11,9 +11,12 @@ import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.lab1b.databinding.FragmentFirstBinding;
 
+import java.util.Random;
+
 public class FirstFragment extends Fragment {
 
     private FragmentFirstBinding binding;
+    private String[] allStrings;
 
     @Override
     public View onCreateView(
@@ -28,12 +31,12 @@ public class FirstFragment extends Fragment {
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
-        binding.buttonFirst.setOnClickListener(new View.OnClickListener() {
+        allStrings = getResources().getStringArray(R.array.strings);
+        binding.button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                NavHostFragment.findNavController(FirstFragment.this)
-                        .navigate(R.id.action_FirstFragment_to_SecondFragment);
+                Random random = new Random();
+                binding.output.setText(allStrings[(int)Math.floor(random.nextDouble()*(allStrings.length))]);
             }
         });
     }
